@@ -18,6 +18,66 @@ img {
   height: auto;
 }
 
+/* !Popup */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: RGB(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--base-color-alt);
+  margin: 20% 10%;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 1rem;
+  width: 80%;
+  height: auto;
+  padding: 1.5rem;
+  position: relative;
+  gap: 1rem;
+  color: black;
+}
+
+/* The Close Button */
+.close {
+  color: rgb(10, 10, 10);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  top: 0;
+  right: 1rem;
+  position: absolute;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.thanks {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
 /*========  VARIABLES  ===========*/
 :root {
   --header-height: 4.5rem;
@@ -37,18 +97,18 @@ img {
 /*======== BASE ===========*/
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-  font: 400 1rem 'DM sans', sans-serif;
+  font: 400 1rem "DM sans", sans-serif;
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
 
 .title {
-  font: 700 1.875rem 'Poppins', sans-serif;
+  font: 700 1.875rem "Poppins", sans-serif;
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
@@ -61,7 +121,7 @@ body {
   align-items: center;
   padding: 0 2rem;
   border-radius: 0.25rem;
-  font: 500 1rem 'DM sans', sans-serif;
+  font: 500 1rem "DM sans", sans-serif;
   transition: background 0.3s;
 }
 
@@ -148,7 +208,7 @@ main {
 /*========  LOGO  ===========*/
 
 .logo {
-  font: 700 1.31rem 'Poppins', sans-serif;
+  font: 700 1.31rem "Poppins", sans-serif;
   color: var(--title-color);
 }
 
@@ -180,7 +240,7 @@ nav ul li a:hover {
 }
 
 nav ul li a::after {
-  content: '';
+  content: "";
   width: 0%;
   height: 2px;
   background: var(--base-color);
@@ -246,7 +306,7 @@ nav .icon-close {
   position: absolute;
   top: -1.5rem;
   right: 1.5rem;
-  
+
   transition: 0.2s;
 }
 
@@ -271,7 +331,7 @@ nav.show div.icon-close {
 }
 
 #home .image::before {
-  content:'';
+  content: "";
   height: 100%;
   width: 100%;
   background: var(--base-color-second);
@@ -318,7 +378,7 @@ nav.show div.icon-close {
 }
 
 #about .image::before {
-  content: '';
+  content: "";
   height: 100%;
   width: 100%;
   background: var(--base-color-second);
@@ -344,14 +404,14 @@ nav.show div.icon-close {
 
 /*======== SERVICES ===========*/
 .cards.grid {
-gap: 1.5rem;
+  gap: 1.5rem;
 }
 
 .card {
   padding: 3.625rem 2rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-bottom: 0.25rem solid var(--base-color);
-  border-radius: .25rem .25rem 0 0;
+  border-radius: 0.25rem 0.25rem 0 0;
   text-align: center;
 }
 
@@ -364,5 +424,5 @@ gap: 1.5rem;
 
 .card .title {
   font-size: 1.5rem;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }

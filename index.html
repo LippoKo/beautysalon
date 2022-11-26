@@ -22,6 +22,36 @@
   </head>
   <!------ LAYOUT ------>
   <body>
+    <!-- !Popup -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <!--nesse evento "onclick" é onde fecho a model, deve ser colocado no X-->
+        <span class="close" onclick="fecharModel()">&times;</span>
+        <h4>
+          This site is under development following the principles of mobile
+          first for better visualization we recommend putting it in a mobile
+          dimension.
+        </h4>
+        <p>If you dont know how folow this steps:</p>
+        <p>
+          <strong>1</strong> Right click mouse on the page and select de last
+          option "Inspect"
+        </p>
+        <p>
+          <strong>2</strong> In the upper left corner of the new window click on
+          the icon with 2 rectangles symbolizing "tablet and cell phone"
+        </p>
+        <p>
+          <strong>3</strong> Then just scale the image on the right side button
+          or select a model in the option in the center of the screen with
+          "dimension"
+        </p>
+        <p class="thanks"><strong>Thanks!</strong></p>
+      </div>
+    </div>
+
+    <!-- !Header -->
     <header id="header">
       <nav class="container">
         <a class="logo" href="#">Beauty<span>Salon</span>.</a>
@@ -146,13 +176,14 @@
       <section class="section" id="testimonials">
         <div class="container grid">
           <header>
-            <h2 class="title">Depoimentos de quem ja passou por aqui</h2>
+            <h2 class="title">Coming Soon</h2>
             <div class="testimonials">
               <div class="testimonials">
                 <p>
                   <span>&ldquo;</span>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
                   consequuntur quisquam doloribus illum.
+                  <span>&ldquo;</span>
                 </p>
               </div>
               <div class="testimonials"></div>
@@ -163,9 +194,6 @@
       </section>
 
       <!-- CONTACTS -->
-      <section class="section" id="contact">
-        <div class="container grid">Contatos</div>
-      </section>
     </main>
 
     <script src="main.js"></script>

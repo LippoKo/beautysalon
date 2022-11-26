@@ -1,33 +1,49 @@
 // DOM Document Object Model
 /* abre e fecha o menu quando clicar no icone: ... e X */
-const nav = document.querySelector('#header nav')
-const toggle = document.querySelectorAll('nav .toggle')
+const nav = document.querySelector("#header nav")
+const toggle = document.querySelectorAll("nav .toggle")
 
 for (const element of toggle) {
-  element.addEventListener('click', function () {
-    nav.classList.toggle('show')
+  element.addEventListener("click", function () {
+    nav.classList.toggle("show")
   })
 }
 
 /* quando clicar e um item do menu, esconder o menu */
-const links = document.querySelectorAll('nav ul li a')
+const links = document.querySelectorAll("nav ul li a")
 
 for (const link of links) {
-  link.addEventListener('click', function () {
-    nav.classList.remove('show')
+  link.addEventListener("click", function () {
+    nav.classList.remove("show")
   })
 }
 
 /* mudar o header da pagina quando der scroll */
-const header = document.querySelector('#header')
+const header = document.querySelector("#header")
 const navHeight = header.offsetHeight
 
-window.addEventListener('scroll', function () {
+window.addEventListener("scroll", function () {
   if (this.window.scrollY >= navHeight) {
     // scroll é maior que a altura do header
-    header.classList.add('scroll')
+    header.classList.add("scroll")
   } else {
     // scroll é menor que a altura do header
-    header.classList.remove('scroll')
+    header.classList.remove("scroll")
   }
 })
+// !Popup
+
+const popup = () => {
+  // Get the modal
+  setTimeout(function () {
+    const modal = document.getElementById("myModal")
+    modal.style.display = "block"
+  }, 1500)
+}
+
+function fecharModel() {
+  const modal = document.getElementById("myModal")
+  modal.style.display = "none"
+}
+
+window.onload = popup()
