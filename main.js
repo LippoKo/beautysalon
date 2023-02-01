@@ -33,20 +33,20 @@ window.addEventListener('scroll', function () {
 })
 // !Popup
 
-// const popup = () => {
-//   // Get the modal
-//   setTimeout(function () {
-//     const modal = document.getElementById("myModal")
-//     modal.style.display = "block"
-//   }, 1500)
-// }
+const popup = () => {
+  // Get the modal
+  setTimeout(function () {
+    const modal = document.getElementById('myModal')
+    modal.style.display = 'block'
+  }, 1500)
+}
 
-// function fecharModel() {
-//   const modal = document.getElementById("myModal")
-//   modal.style.display = "none"
-// }
+function fecharModel() {
+  const modal = document.getElementById('myModal')
+  modal.style.display = 'none'
+}
 
-// window.onload = popup()
+window.onload = popup()
 
 /* Testimonials */
 
