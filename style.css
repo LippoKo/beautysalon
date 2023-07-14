@@ -84,7 +84,7 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 159;
+  --hue: 300;
   /* HSL color mode */
   --base-color: hsl(var(--hue) 36% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
@@ -144,7 +144,7 @@ body {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(159, 36%, 57%, 1),
+    var(--base-color),
     hsla(159, 65%, 88%, 0.34)
   );
 }
@@ -154,7 +154,7 @@ body {
   background: linear-gradient(
     270deg,
     hsla(159, 65%, 88%, 0.34),
-    hsla(159, 36%, 57%, 1)
+    var(--base-color) 
   );
 }
 
